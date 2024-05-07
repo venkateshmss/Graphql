@@ -1,0 +1,41 @@
+query AllLifts {
+  openCount: liftCount(status: OPEN)
+  holdCount: liftCount(status: HOLD)
+  closedCount: liftCount(status: CLOSED)
+  allTrails {
+    id
+    name
+    status
+    accessedByLifts {
+      id
+      trailAccess {
+        id
+        name
+      }
+    }
+  }
+}
+
+query AllTrails {
+  allTrails {
+    id
+    name
+    status
+  }
+}
+
+
+query TrailQuery{
+  Trail(id:"blackhawk"){
+    name
+    status
+  }
+}
+
+query AllLifts1{
+  allLifts{
+    name
+    id
+    status
+  }
+}
