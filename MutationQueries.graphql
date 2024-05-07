@@ -1,0 +1,14 @@
+mutation ChangeTrailStatus{
+  setTrailStatus(id:"blackhawk" status:CLOSED){
+    name
+    status
+  }
+}
+
+mutation ChangeLiftStatus{
+  setLiftStatus(id:"astra-express" status:CLOSED){
+    name
+    id
+    status
+  }
+}
