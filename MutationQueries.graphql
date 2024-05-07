@@ -12,3 +12,19 @@ mutation ChangeLiftStatus{
     status
   }
 }
+
+
+mutation CreateAccount($input: CreateAccountInput!) {
+  createAccount(input: $input) {
+    name
+  }
+}
+
+{
+  "input": {
+    "username": "210988",
+    "password": "password",
+    "name":"venkatesh"
+  },
+  
+}
