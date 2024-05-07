@@ -39,3 +39,17 @@ query AllLifts1{
     status
   }
 }
+
+
+query AllPets {
+  allPets {
+    name
+    weight
+    category
+    status
+    inCareOf {
+      username
+      name
+    }
+  }
+}
