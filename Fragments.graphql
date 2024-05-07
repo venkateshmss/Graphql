@@ -1,0 +1,16 @@
+query AllLifts{
+  allLifts{
+    ...LiftDetails
+  }
+  Lift(id:"jolly-roger"){
+    ...LiftDetails
+  }
+}
+
+fragment LiftDetails on Lift{
+  id
+  name
+  status
+  capacity
+  night
+}
