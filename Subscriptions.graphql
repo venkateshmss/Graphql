@@ -1,0 +1,10 @@
+# This is used to stream the changes.
+# Used in websockets
+# In Facebook, this is used to track the emojis of live streaming.
+
+subscription ListenLiftChanges{
+  liftStatusChange {
+    name
+    status
+  }
+}
